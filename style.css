@@ -19,10 +19,6 @@ body {
 	
 }
 
-.navbar-default .navbar-nav {
- height: 40px;
-}
-
 .navbar-default  {
   background-color:#FFDB45;
   background-image: none;
@@ -36,6 +32,7 @@ body {
 
 /* link */
 .navbar-default .navbar-nav > li > a {
+    height: 50px;
     color: #0070ba;
     background-color: #FFDB45;
 }
