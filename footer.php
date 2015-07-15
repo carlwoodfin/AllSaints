@@ -9,6 +9,6 @@
   <!-- Footer Container -->
 
     <?php wp_footer(); ?>
-	</div> <!-- The page container ending -->
+	</div> <!-- The container ending -->
   </body>
 </html>
