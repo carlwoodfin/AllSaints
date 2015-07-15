@@ -20,6 +20,10 @@ body {
 	
 }
 
+.navbar {
+ min-height: 40px;
+}
+
 .navbar-default  {
   background-color:#FFDB45;
   background-image: none;
