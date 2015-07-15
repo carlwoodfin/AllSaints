@@ -1,5 +1,6 @@
 <?php
 
+
 /* Register Navigation Helper */
 require_once('wp_bootstrap_navwalker.php');
 
