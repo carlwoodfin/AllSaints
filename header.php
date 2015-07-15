@@ -27,7 +27,7 @@
  				  	<img src="<?php echo bloginfo('template_directory'); ?>/ass-logo.jpg" class="img-responsive" />
 			</div>
 
-				<div class="col-md-3 col-md-offset-5 headeraddress">
+				<div class="col-md-3 col-md-offset-5 headeraddress hidden-xs hidden-sm">
 				<address>
 					<p class="text-right"><img src="http://www.allsaints.stockport.sch.uk/wp-content/themes/All_sents/images/fb.png" />
 					<img src="http://www.allsaints.stockport.sch.uk/wp-content/themes/All_sents/images/tw.png" />

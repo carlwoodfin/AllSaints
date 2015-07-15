@@ -16,12 +16,15 @@ body {
 }
 
 .header {
-	background-color: #0070ba;
-	
+	background-color: #0070ba;	
+}
+
+.carousel {
+    max-width: 975px;
 }
 
 .navbar {
- min-height: 40px;
+    min-height: 30px;
 }
 
 .navbar-default  {
@@ -37,7 +40,9 @@ body {
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-    height: 20px;
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 30px;
     color: #0070ba;
     background-color: #FFDB45;
 }
