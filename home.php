@@ -6,7 +6,7 @@ get_header();
  query_posts( 'cat=3&posts_per_page=1' );
 
  while ( have_posts() ) : the_post();
-	<!-- Do special_cat stuff... -->
+	//<!-- Do special_cat stuff... -->
  endwhile; 
  
 get_footer();
