@@ -2,17 +2,12 @@
 
 get_header();
  
-function get_custom_cat_template($single_template) {
-     global $post;
- 
-       if ( in_category( 'cat=2' )) {
-          $single_template = dirname( __FILE__ ) . '/single-template.php';
-     }
-     return $single_template;
-}
- 
-add_filter( "single_template", "get_custom_cat_template" ) ;
- 
+// Get the last 10 posts in the special_cat category.
+<?php query_posts( 'cat=3&posts_per_page=1' ); ?>
+
+<?php while ( have_posts() ) : the_post(); ?>
+	<!-- Do special_cat stuff... -->
+<?php endwhile; ?>
  
 get_footer();
 ?>
