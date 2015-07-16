@@ -5,7 +5,7 @@ get_header();
 function get_custom_cat_template($single_template) {
      global $post;
  
-       if ( in_category( 'category-name' )) {
+       if ( in_category( 'cat=2' )) {
           $single_template = dirname( __FILE__ ) . '/single-template.php';
      }
      return $single_template;
