@@ -13,11 +13,15 @@ Tags: responsive, white, bootstrap
  
 body {  
      padding-bottom: 40px;
-     font-family: Trebuchet; 
+     font-family: Tahoma; 
 }
 
 .homecontent {
 	
+}
+
+h2 {
+	font-weight: strong;
 }
 
 .header {
