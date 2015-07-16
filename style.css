@@ -12,11 +12,12 @@ Tags: responsive, white, bootstrap
 
  
 body {  
-     padding-bottom: 40px; 
+     padding-bottom: 40px;
+     font-family: Trebuchet; 
 }
 
 .homecontent {
-	font-family: Trebuchet;
+	
 }
 
 .header {
