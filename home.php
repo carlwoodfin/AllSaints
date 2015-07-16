@@ -13,7 +13,7 @@ get_header();
 ?>
 	<h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 	
-	<p class=""><?php the_content(); ?></p>
+	<p class="homecontent"><?php the_content(); ?></p>
 	
 	
  <?php endwhile; ?>

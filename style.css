@@ -15,16 +15,17 @@ body {
      padding-bottom: 40px; 
 }
 
-.header {
-	background-color: #0070ba;	
+.homecontent {
+	font-family: Trebuchet;
 }
 
-.carousel {
-    max-width: 975px;
+.header {
+	background-color: #0070ba;
+	
 }
 
 .navbar {
-    min-height: 30px;
+ min-height: 40px;
 }
 
 .navbar-default  {
@@ -40,9 +41,7 @@ body {
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-    padding-top:4px !important; 
-    padding-bottom:0 !important;
-    height: 30px;
+    height: 20px;
     color: #0070ba;
     background-color: #FFDB45;
 }
