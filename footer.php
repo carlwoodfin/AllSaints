@@ -1,7 +1,7 @@
 
 
       <footer>
-<?php dynamic_sidebar('main-right-sidebar'); ?>
+<?php get_sidebar(); ?>
       
 
       </footer>
