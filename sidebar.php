@@ -1,14 +1,9 @@
-<?php
-/**
- * Sidebar template
- */
+<?php 
 
-?>
+if ( is_active_sidebar( 'main-right-sidebar' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'main-right-sidebar' ); ?>
+	</div><!-- #primary-sidebar -->
 
-<div id="sidebar">
-   <ul>
-      <?php
-      if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('homepage-sidebar') ) :
-      endif; ?>
-   </ul>
-</div>
+
+<?php endif; ?>
