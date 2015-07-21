@@ -11,7 +11,7 @@ Tags: responsive, white, bootstrap
 */
 
  
-body {  
+html, body {  
      font-family: Tahoma; 
      min-height: 100%;
 }
@@ -154,7 +154,7 @@ h2 {
 }
 
 .footer {
-    height: 50px;
+    height: 60px;
     background-color: #0070ba; 
 }
 
