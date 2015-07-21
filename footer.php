@@ -12,16 +12,7 @@
 		<div>
       </footer>
 
-<<<<<<< HEAD
-
-  <!-- Footer Container -->
-
-    
-	</div> <!-- The container ending -->
-<?php wp_footer(); ?>
-=======
     
 	<?php wp_footer(); ?>
->>>>>>> master
   </body>
 </html>
