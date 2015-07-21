@@ -1,17 +1,14 @@
 
-<div class="col-md-3">
-		<?php get_sidebar(); ?>
-</div>
-
-
-</div> <!-- #wrap ending -->
+</div><!-- The container ending -->
 <footer>
-		<div class="footer col-md-12">
-      		
-      		<p>&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>. Built with <a href="http://wordpress.org/">WordPress</a>, <a href="http://getbootstrap.com/">Bootstrap</a></p>
-		<div>
-      </footer>
-</div> <!-- The container ending -->
+	<div class="container">
+	<nav class="footer navbar-bottom">
+
+			<p class="text-right">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>.</p>
+	</nav>
+	</div>
+</footer>
+	
 
     
 	<?php wp_footer(); ?>

@@ -21,12 +21,11 @@
   
   
 <div class="container">
-<div id="wrap">
 	<div class="header row">
 		
   			<div class="col-md-4">
   			
- 				  	<img src="<?php echo bloginfo('template_directory'); ?>/ass-logo.jpg" class="img-responsive" />
+ 				  	<a href="<?php echo bloginfo('url'); ?>"><img src="<?php echo bloginfo('template_directory'); ?>/ass-logo.jpg" class="img-responsive" /></a>
 			</div>
 
 				<div class="col-md-3 col-md-offset-5 headeraddress hidden-xs hidden-sm">
