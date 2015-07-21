@@ -14,7 +14,7 @@ get_header();
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
   </ol>
 <?php 
-   $the_query = new WP_Query('cat=3&posts_per_page=1'); 
+   $the_query = new WP_Query('category_name=slider&posts_per_page=1'); 
    while ( $the_query->have_posts() ) : 
    $the_query->the_post();
   ?>
@@ -25,7 +25,7 @@ get_header();
    <?php endwhile; 
    wp_reset_postdata(); ?>
   <?php 
- $the_query = new WP_Query('cat=3&posts_per_page=5&offset=1'); 
+ $the_query = new WP_Query('category_name=slider&posts_per_page=5&offset=1'); 
  while ( $the_query->have_posts() ) : 
  $the_query->the_post();
 ?>
