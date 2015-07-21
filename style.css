@@ -24,6 +24,10 @@ html, body {
 	
 }
 
+#pages {
+    list-style: none;
+}
+
 .header {
 	background-color: #0070ba;
 	

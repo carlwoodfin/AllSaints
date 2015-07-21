@@ -3,8 +3,8 @@
 get_header();
 
 ?>
-
- <div class="row col-md-10 col-md-offset-1 hidden-xs hidden-sm carousel-padding">
+  <div class="row">
+ <div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm carousel-padding">
 
 <div id="postCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -25,7 +25,7 @@ get_header();
    <?php endwhile; 
    wp_reset_postdata(); ?>
   <?php 
- $the_query = new WP_Query('category_name=slider&posts_per_page=5&offset=1'); 
+ $the_query = new WP_Query('category_name=slider&posts_per_page=4'); 
  while ( $the_query->have_posts() ) : 
  $the_query->the_post();
 ?>
@@ -45,6 +45,7 @@ get_header();
     </div><!-- /.carousel -->
 
 </div>
+</div> <!-- Carousel row ending -->
 <div class="row">
 <div class="col-md-9">
 <?php
