@@ -9,7 +9,8 @@
 
   <!-- Footer Container -->
 
-    <?php wp_footer(); ?>
+    
 	</div> <!-- The container ending -->
+<?php wp_footer(); ?>
   </body>
 </html>
