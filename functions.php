@@ -21,9 +21,9 @@ add_action( 'after_setup_theme', 'wpt_setup' );
         function wpt_setup() {  
             register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
         } endif;
-?>
 
-<?php
+
+
 /**
  * Register our sidebars and widgetized areas.
  *
