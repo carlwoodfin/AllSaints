@@ -19,8 +19,9 @@
   </head>
   <body>
   
-  <div id="wrap">
+  
 <div class="container">
+<div id="wrap">
 	<div class="header row">
 		
   			<div class="col-md-4">
