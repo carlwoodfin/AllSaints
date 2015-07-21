@@ -13,6 +13,21 @@ Tags: responsive, white, bootstrap
  
 body {  
      font-family: Tahoma; 
+     min-height: 100%;
+}
+
+.container {
+    min-height: 100%;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
 .homecontent {
@@ -26,6 +41,13 @@ h2 {
 .header {
 	background-color: #0070ba;
 	
+}
+
+#postCarousel {
+    padding-bottom: 75px;
+}
+.carousel-padding {
+    padding-bottom: 20px;
 }
 
 .navbar {
@@ -45,7 +67,7 @@ h2 {
 
 /* link */
 .navbar-default .navbar-nav > li > a {
-    height: 40px;
+    height: 50px;
     color: #0070ba;
     background-color: #FFDB45;
 }
@@ -130,3 +152,9 @@ h2 {
 	color: #FFDB45;
 
 }
+
+.footer {
+    height: 50px;
+    background-color: #0070ba; 
+}
+
