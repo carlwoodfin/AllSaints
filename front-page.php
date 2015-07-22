@@ -4,7 +4,7 @@ get_header();
 
 ?>
   <div class="row">
- <div class="col-md-10 col-md-offset-1 hidden-xs hidden-sm carousel-padding">
+ <div class="col-md-10 col-md-offset-1">
 
 <div id="postCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -46,6 +46,7 @@ get_header();
 
 </div>
 </div> <!-- Carousel row ending -->
+<hr>
 <div class="row">
 <div class="col-md-9">
 <?php
