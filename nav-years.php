@@ -7,6 +7,7 @@
     <?php /* Years Navigation */
       wp_nav_menu( array(
       'menu' => 'Years',
+      'theme_location' => 'years-menu',
       'depth' => 2,
       'container' => false,
       'menu_class' => 'nav nav-pills nav-justified years-nav',

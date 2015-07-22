@@ -13,7 +13,8 @@
   
     <?php /* Primary navigation */
       wp_nav_menu( array(
-      'menu' => 'extra-menu',
+      'menu' => 'Extra',
+      'theme_location' => 'extra-menu',
       'depth' => 2,
       'container' => false,
       'menu_class' => 'nav nav-pills nav-justified footer-nav',

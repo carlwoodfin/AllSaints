@@ -57,12 +57,13 @@
 
 	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   
-    <?php /* Primary navigation */
+    <?php /* Navigation */
       wp_nav_menu( array(
-      'menu' => 'Navigation Menu',
+      'menu' => 'Nav',
+      'theme_location' => 'navigation-menu',
       'depth' => 2,
       'container' => false,
-      'menu_class' => 'nav navbar-nav nav-pills',
+      'menu_class' => 'nav navbar-nav',
       //Process nav menu using our custom nav walker
       'walker' => new wp_bootstrap_navwalker())
       );
