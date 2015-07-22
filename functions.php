@@ -49,20 +49,20 @@ if (function_exists('register_sidebar')) {
 		'name' => 'Header',
 		'id'   => 'header',
 		'description'   => 'This is the widgetized header.',
-		'class'			=> 'list-unstyled',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
+		'class'			=> '',
+		'before_widget' => '<div class="panel-heading %2$s">',
+		'after_widget'  => '</div></div>',
+		'before_title'  => '<h3 class="panel-title">',
+		'after_title'   => '</h3></div><div class="widget panel-body">'
 	));
 	register_sidebar(array(
 		'name' => 'Sidebar',
 		'id'   => 'sidebar',
 		'description'   => 'This is the widgetized sidebar.',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'before_widget' => '<div class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>'
 	));
 	register_sidebar(array(
 		'name' => 'Footer',
@@ -70,8 +70,8 @@ if (function_exists('register_sidebar')) {
 		'description'   => 'This is the widgetized footer.',
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h4>',
-		'after_title'   => '</h4>'
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>'
 	));
 
 }

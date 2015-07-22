@@ -24,8 +24,10 @@ html, body {
 	
 }
 
-#pages {
+.widget ul {
+    list-style-image: none;
     list-style: none;
+    list-style-position: outside;
 }
 
 .header {

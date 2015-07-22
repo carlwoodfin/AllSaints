@@ -1,5 +1,5 @@
 <?php if ( is_active_sidebar( 'Header' ) ) : ?>
-    <div class="sidebar">
+   	<div class="panel panel-primary">
         <?php dynamic_sidebar( 'Header' ); ?>
-    </div>
+  	</div>
 <?php endif; ?>
