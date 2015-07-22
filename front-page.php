@@ -48,6 +48,10 @@ get_header();
 </div> <!-- Carousel row ending -->
 <hr>
 <div class="row">
+<?php get_template_part( 'nav', 'years' ); ?>
+<hr>
+</div>
+<div class="row">
 <div class="col-md-9">
 <?php
  
@@ -68,7 +72,6 @@ get_header();
   <div class="col-md-3">
 <?php get_sidebar(); ?>
 </div>
-
 </div> <!-- Row ending -->
 
 <?php get_footer(); ?>

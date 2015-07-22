@@ -19,11 +19,16 @@ add_action('wp_enqueue_scripts', 'reg_scripts');
 <?php
 
 /* Theme setup - Add dynamic primary navigation */
-add_action( 'after_setup_theme', 'wpt_setup' );
-    if ( ! function_exists( 'wpt_setup' ) ):
-        function wpt_setup() {  
-            register_nav_menu( 'primary', __( 'Primary navigation', 'wptuts' ) );
-        } endif;
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'navigation-menu' => __( 'Navigation Menu' ),
+      'years-menu' => __( 'Years Menu' ),
+      'extra-menu' => __( 'Extra Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 ?>
 <?php 
 // Adding thumbnail support
@@ -50,10 +55,10 @@ if (function_exists('register_sidebar')) {
 		'id'   => 'header',
 		'description'   => 'This is the widgetized header.',
 		'class'			=> '',
-		'before_widget' => '<div class="panel-heading %2$s">',
+		'before_widget' => '<div class="panel panel-primary widget %2$s">',
 		'after_widget'  => '</div></div>',
-		'before_title'  => '<h3 class="panel-title">',
-		'after_title'   => '</h3></div><div class="widget panel-body">'
+		'before_title'  => '<div class="panel-heading"><h3 class="panel-title">',
+		'after_title'   => '</h3></div><div class="panel-body">'
 	));
 	register_sidebar(array(
 		'name' => 'Sidebar',
