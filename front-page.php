@@ -4,7 +4,7 @@ get_header();
 
 ?>
   <div class="row">
- <div class="col-md-10 col-md-offset-1">
+ <div class="col-md-12">
 
 <div id="postCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -48,8 +48,10 @@ get_header();
 </div> <!-- Carousel row ending -->
 <hr>
 <div class="row">
+<h4 class="text-center">See some of our children's work!</h4>
+<div class="col-md-8 col-md-offset-2">
 <?php get_template_part( 'nav', 'years' ); ?>
-<hr>
+</div>
 </div>
 <div class="row">
 <div class="col-md-9">
@@ -60,7 +62,7 @@ get_header();
 
  while ( have_posts() ) : the_post();
 ?>
-	<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+	<h3><?php the_title(); ?></h3>
 	
 	<p class="homecontent"><?php the_content(); ?></p>
 	

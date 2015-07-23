@@ -37,6 +37,7 @@
 					<strong>Tel: 0161 285 7373</strong></p>
 				</address>
 				</div>
+        <div class="header-yellow"></div>
 	
 		
 	</div> <!-- Header row ending -->

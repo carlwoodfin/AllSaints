@@ -31,6 +31,7 @@ html, body {
 
 .header {
 	background-color: #0070ba;
+    border-bottom: thick solid #FFDB45;
 	
 }
 
@@ -45,6 +46,13 @@ html, body {
 }
 .carousel-padding {
     
+}
+
+.footer {
+    color: #FFDB45;
+    height: 50px;
+    background-color: #0070ba;
+    border-top: thick solid #FFDB45;
 }
 
 /* Years Navigation */
