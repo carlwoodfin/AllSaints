@@ -27,7 +27,7 @@
 
 			
 	</nav>
-  <div class="footer bottom">
+  <div class="footer">
 	<p class="text-center">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>.</p>
 	</div>
   </div>

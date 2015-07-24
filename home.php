@@ -14,7 +14,7 @@
     <?php endif; ?>
 
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 right">
 
     <?php get_sidebar(); ?>   
 

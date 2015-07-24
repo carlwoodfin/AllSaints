@@ -7,8 +7,9 @@
 	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 <?php endif; ?>
 </div>
-</div>
-<div class="col-md-3">
+
+<div class="col-md-3 right">
 <?php get_sidebar(); ?>
+</div>
 </div>
 <?php get_footer(); ?>

@@ -10,7 +10,7 @@
 	  	<?php the_content(); ?>
 
 	  	<hr>
-<div class="col-md-5">		<?php comments_template(); ?>
+<div class="col-md-5">		<?php comments_template('/comments.php'); ?>
 </div>
 	<?php endwhile; else: ?>
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>

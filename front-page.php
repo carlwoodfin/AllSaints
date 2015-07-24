@@ -49,7 +49,7 @@ get_header();
 <hr>
 <div class="row">
 <h4 class="text-center">See some of our children's work!</h4>
-<div class="col-md-8 col-md-offset-2">
+<div class="col-md-6 col-md-offset-3">
 <?php get_template_part( 'nav', 'years' ); ?>
 </div>
 </div>
