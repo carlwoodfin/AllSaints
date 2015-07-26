@@ -13,13 +13,17 @@ $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
 
-  <div class="well">
+  <div class="row well">
 
+  <div class="col-md-3">
     <?php the_post_thumbnail('thumbnail', array('class' => 'img-thumbnail img-circle')); ?>
-		<h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-		<p><?php the_content(); ?></p>
-  
   </div>
+  <div class"col-md-3">
+		<h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+  		</div>
+		<p><?php the_content(); ?></p>
+		
+ </div>
 
 
 <?php endforeach; 
