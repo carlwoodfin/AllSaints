@@ -7,7 +7,8 @@
       wp_nav_menu( array(
       'menu' => 'Years',
       'theme_location' => 'years-menu',
-      'menu_class'      => 'btn btn-default',
+      'menu_class'      => '',
+      'link_before' => 'btn btn-default',
       'depth' => 2,
       'container' => false,
       //Process nav menu using our custom nav walker
