@@ -10,9 +10,11 @@ Tags: responsive, white, bootstrap
 
 */
 
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
  
 html, body {  
-     font-family: Tahoma; 
+     font-family: Ubuntu; 
      
 }
 
