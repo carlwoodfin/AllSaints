@@ -8,7 +8,7 @@
       wp_nav_menu( array(
       'menu' => 'Years',
       'theme_location' => 'years-menu',
-      'menu_class'      => 'nav nav-pills',
+      'menu_class'      => 'nav btn-small',
       'depth' => 2,
       'container' => false,
       //Process nav menu using our custom nav walker
