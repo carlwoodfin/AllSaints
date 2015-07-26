@@ -1,5 +1,4 @@
     <div class="row">
-    <nav class="navbar navbar-inverse" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
    
 
@@ -8,7 +7,7 @@
       wp_nav_menu( array(
       'menu' => 'Years',
       'theme_location' => 'years-menu',
-      'menu_class'      => 'nav btn-small',
+      'menu_class'      => 'btn btn-default',
       'depth' => 2,
       'container' => false,
       //Process nav menu using our custom nav walker
