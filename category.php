@@ -7,7 +7,7 @@
 <?php
 
 
-$args = array( 'posts_per_page' => 5, 'category' => $cat );
+$args = array( 'posts_per_page' => 10, 'category' => $cat );
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
@@ -15,10 +15,10 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
   <div class="row well">
 
-  <div class="col-md-3">
+  <div class="col-md-2">
     <?php the_post_thumbnail('thumbnail', array('class' => 'img-thumbnail img-circle')); ?>
   </div>
-  <div class"col-md-3">
+  <div class"col-md-5">
 		<h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
   		</div>
 		<p><?php the_content(); ?></p>
