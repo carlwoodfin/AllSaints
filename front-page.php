@@ -4,7 +4,7 @@ get_header();
 
 ?>
   <div class="row">
- <div class="col-md-12">
+ <div class="col-md-10 col-md-offset-1">
 
 <div id="postCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -19,7 +19,7 @@ get_header();
    $the_query->the_post();
   ?>
   <div class="item active">
-  <?php the_post_thumbnail('medium');?>
+  <?php the_post_thumbnail('slider-image');?>
 
    </div><!-- item active -->
    <?php endwhile; 
@@ -30,7 +30,7 @@ get_header();
  $the_query->the_post();
 ?>
 <div class="item">
- <?php the_post_thumbnail('medium');?>
+ <?php the_post_thumbnail('slider-image');?>
  <div class="carousel-caption">
  <!-- <h4><?php the_title();?></h4> -->
  </div>
