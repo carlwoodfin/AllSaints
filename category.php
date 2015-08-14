@@ -4,11 +4,11 @@
 <div class="col-md-8">
 
 
-<h3><?php single_cat_title('Welcome to '); ?></h3>
+<h3 class="yearwelcome"><?php single_cat_title('Welcome to '); ?></h3>
 <?php
 
 
-$args = array( 'posts_per_page' => 10, 'category' => $cat );
+$args = array( 'posts_per_page' => 10 );
 
 
 
@@ -25,7 +25,7 @@ foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
   <div class"col-md-5">
 		<h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
   		</div>
-		<p><?php the_content(); ?></p>
+		<p><?php the_excerpt(); ?></p>
 		
  </div>
 
