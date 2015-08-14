@@ -4,13 +4,11 @@
 <div class="col-md-8">
 
 
-<h3 class="yearwelcome"><?php single_cat_title('Welcome to '); ?></h3>
+<h3 class="yearwelcome">Welcome to <?php single_cat_title(); ?></h3>
 <?php
 
 
-$args = array( 'posts_per_page' => 10 );
-
-
+$args = array( 'posts_per_page' => 10, 'category' => $cat );
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>

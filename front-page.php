@@ -47,12 +47,6 @@ get_header();
 </div>
 </div> <!-- Carousel row ending -->
 <hr>
-<div class="row text-center">
-<h4 class="">See some of our children's work!</h4>
-<div class="col-md-12">
-<?php get_template_part( 'nav', 'years' ); ?>
-</div>
-</div>
 <div class="row">
 <div class="col-md-9">
 <?php
@@ -71,8 +65,17 @@ get_header();
 </div>  
 
 
+
+
   <div class="col-md-3">
 <?php get_sidebar(); ?>
+</div>
+
+<div class="row text-center">
+<h5 class="">See some of our children's work!</h5>
+<div class="col-md-12">
+<?php get_template_part( 'nav', 'years' ); ?>
+</div>
 </div>
 </div> <!-- Row ending -->
 
