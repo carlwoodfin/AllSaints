@@ -71,7 +71,7 @@ get_header();
 <?php get_sidebar(); ?>
 </div>
 
-<div class="row text-center">
+<div class="row text-center year-work">
 <h5 class="">See some of our children's work!</h5>
 <div class="col-md-12">
 <?php get_template_part( 'nav', 'years' ); ?>

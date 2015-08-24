@@ -55,6 +55,11 @@ html, body {
 .menu-years.navyears ul {
 
 }
+
+.panel-primary>.panel-heading {
+    border-bottom: thick solid #FFDB45;
+}
+
 .navyears li a {
     color: #FFDB45;
 }
@@ -65,7 +70,9 @@ html, body {
     
 }
 
-
+.year-work {
+    font-family: Indie Flower;
+}
 
 .yearwelcome {
    font-family: Schoolbell;
