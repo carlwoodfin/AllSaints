@@ -3,7 +3,7 @@
 get_header();
 
 ?>
-  <div class="row">
+<div class="row">
  <div class="col-md-10 col-md-offset-1">
 
 <div id="postCarousel" class="carousel slide" data-ride="carousel">
@@ -48,35 +48,28 @@ get_header();
 </div> <!-- Carousel row ending -->
 <hr>
 <div class="row">
+<div class="col-md-6 col-md-offset-3">
+
+
+</div>
+</div>
+<hr>
+
+
+
+<div class="col-md-6 col-md-offset-3 text-center">
+<h5 class="year-work">See some of our children's work!</h5>
+<?php get_template_part( 'nav', 'years' ); ?>
+</div>
+
+<div class="row">
 <div class="col-md-9">
-<?php
- 
-// Get the last 10 posts in the special_cat category.
- query_posts( 'pagename=Home' );
-
- while ( have_posts() ) : the_post();
-?>
-	<h3><?php the_title(); ?></h3>
-	
-	<p class="homecontent"><?php the_content(); ?></p>
-	
-
- <?php endwhile; ?>
-</div>  
-
-
-
-
+</div>
   <div class="col-md-3">
 <?php get_sidebar(); ?>
 </div>
+</div>
 
-<div class="row text-center year-work">
-<h5 class="">See some of our children's work!</h5>
-<div class="col-md-12">
-<?php get_template_part( 'nav', 'years' ); ?>
-</div>
-</div>
-</div> <!-- Row ending -->
+ <!-- Row ending -->
 
 <?php get_footer(); ?>

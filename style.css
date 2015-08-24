@@ -17,10 +17,12 @@ Tags: responsive, white, bootstrap
  
 html, body {  
      font-family: Ubuntu; 
+     background-color: #c1e1f8;
      
 }
 
-.container {
+.content {
+    
    
 }
 
@@ -62,6 +64,7 @@ html, body {
 
 .navyears li a {
     color: #FFDB45;
+    font-weight: bold;
 }
 
 .comment-form-author,
@@ -71,7 +74,7 @@ html, body {
 }
 
 .year-work {
-    font-family: Indie Flower;
+    font-family: Schoolbell;
 }
 
 .yearwelcome {
