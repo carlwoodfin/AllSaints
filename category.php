@@ -1,21 +1,21 @@
 <?php get_header(); ?>
 
 <div class="row">
-<div class="col-md-8">
+<div class="col-md-9">
 
 
 <h3 class="yearwelcome">Welcome to <?php single_cat_title(); ?></h3>
 <?php
 
 
-$args = array( 'posts_per_page' => 10, 'category' => $cat );
+$args = array( 'posts_per_page' => 10, 'post_type' => 'year-1' );
 
 $myposts = get_posts( $args );
 foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 
 
 
-  <div class="row well">
+  <div class="row">
 
   <div class="col-md-2">
     <?php the_post_thumbnail('category-image', array('class' => 'img-thumbnail img-circle')); ?>
@@ -34,7 +34,7 @@ wp_reset_postdata();?>
 
 
 </div>
- <div class="col-md-4">
+ <div class="col-md-3">
 <?php get_sidebar(); ?>
  </div>
  </div>

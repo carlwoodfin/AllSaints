@@ -1,40 +1,20 @@
 
-</div><!-- The container ending -->
-<footer>
-	<div class="container">
+
 	<!-- <nav class="footer "> -->
 	<div class="row">
-  <hr>
-<nav class="navbar navbar-footer navbar-bottom">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    
-
-	 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  
-    <?php /* Primary navigation */
-      wp_nav_menu( array(
-      'menu' => 'Extra',
-      'theme_location' => 'extra-menu',
-      'depth' => 2,
-      'container' => false,
-      'menu_class' => 'nav nav-pills nav-justified footer-nav',
-      //Process nav menu using our custom nav walker
-      'walker' => new wp_bootstrap_navwalker())
-      );
-    ?>
-      
-    </div><!-- /.navbar-collapse -->
-
-			
-	</nav>
-  <div class="footer">
-	<p class="text-center">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>.</p>
+  		<hr>
+  	</div>
+  	<div class="row">
+  	<div class="footer">
+  	<div class="col-md-4 col-md-offset-8">
+			<p class="pull-right">&copy; <?php echo date("Y"); echo " "; bloginfo('name'); ?>  </p>
+		</div>
 	</div>
-  </div>
-  </div>
-</footer>
-	
+	</div>
 
+
+	
+</div><!-- The container ending -->
     
 	<?php wp_footer(); ?>
   </body>

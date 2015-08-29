@@ -12,7 +12,6 @@ function reg_scripts() {
     wp_enqueue_style( 'fontawesomecss', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'stylesheetcss', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', array(), true );
-    wp_enqueue_script( 'bootstrapwpjs', get_template_directory_uri() . '/includes/bootstrap-wp.js', array('jquery') );
     
 }
 add_action('wp_enqueue_scripts', 'reg_scripts');
@@ -36,15 +35,34 @@ add_action( 'init', 'register_my_menus' );
 // Adding thumbnail support
 //add_theme_support( 'post-thumbnails' );
 
-if ( function_exists( 'add_theme_support' ) ) { 
+// Make sure featured images are enabled
 add_theme_support( 'post-thumbnails' );
 
+// Add featured image sizes
+add_image_size( 'featured-large', 640, 294, true ); // width, height, crop
+add_image_size( 'slider-image', 1000, 200, true );
+add_image_size( 'category-image', 150, 150, true );
 
-// additional image sizes
-// delete the next line if you do not need additional image sizes
-add_image_size( 'slider-image', 1024, 250, true ); //300 pixels wide (and unlimited height)
-add_image_size( 'category-image', 150, 150);
+// Add other useful image sizes for use through Add Media modal
+add_image_size( 'medium-width', 480 );
+add_image_size( 'medium-height', 9999, 480 );
+add_image_size( 'medium-something', 480, 480 );
+
+// Register the three useful image sizes for use in Add Media modal
+add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );
+function wpshout_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'slider-image' => __( 'Slider Image' ),
+        'medium-height' => __( 'Medium Height' ),
+        'medium-something' => __( 'Medium Something' ),
+    ) );
 }
+
+
+
+// Register the three useful image sizes for use in Add Media modal
+
+
 ?>
 <?php
 /**
@@ -65,6 +83,16 @@ if (function_exists('register_sidebar')) {
 	));
 
 }
+
+//Calendar style filter
+
+
+add_filter( 'get_calendar' , 'aus_calendar' , 2 ) ;
+function aus_calendar( $markup ) {
+    $markup = str_replace( '<table id="wp-calendar"' , '<table id="wp-calendar" class="table table-stripped"' , $markup ) ;
+    return $markup;
+}
+
 
 //Nav Years Walker Class
 
@@ -106,7 +134,7 @@ function start_lvl( &$output, $depth ) {
     $class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
   
     // build html
-    $output .= $indent . '<li id="nav-menu-item-'. $item->ID . '" class="btn btn-primary ' . $depth_class_names . ' ' . $class_names . '">';
+    $output .= $indent . '<li id="nav-menu-item-'. $item->ID . '" class="' . $depth_class_names . ' ' . $class_names . '">';
   
     // link attributes
     $attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
