@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+get_template_part('includes/nav', 'header');
+?>
 
 <div class="col-md-12">
 <?php
@@ -51,5 +53,4 @@ foreach ( $myposts as $post ) : setup_postdata( $post );
 wp_reset_postdata();?>
 
 
-</div>
-<?php get_footer(); ?>
+<?php get_template_part('includes/content', 'footer'); ?>

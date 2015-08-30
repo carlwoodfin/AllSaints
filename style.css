@@ -17,7 +17,6 @@ Tags: responsive, white, bootstrap
  
 html, body {  
      font-family: Ubuntu; 
-     background-color: #c1e1f8;
      
 }
 
@@ -59,6 +58,11 @@ html, body {
     color: #FFDB45;
  
     font-size: 14px;
+}
+
+.text-white {
+  color: #0070ba;
+  font-size: 2.5em;
 }
 
 .comment-form-author,
@@ -105,12 +109,18 @@ html, body {
 .centered-pills li { display:inline; }
 .centered-pills a { float:left; }
 
+.footer-images {
+  max-height: 84px;
+  padding-top: 15px;
+  border-top-style: dotted;
+  border-bottom-style: dotted;
+}
 
 /* Footer */
 
 .footer {
     color: #FFDB45;
-    height: 50px;
+    height: 75px;
     background-color: #0070ba;
     border-top: thick solid #FFDB45;
 }
@@ -213,7 +223,7 @@ html, body {
     .btn-circle, .btn-xl {
         width: 60px;
         height: 60px;
-        padding: 10px 16px;
+        padding: 6px 8px;
         font-size: 1.5em;
         line-height: 1.33;
         border-radius: 30px;
@@ -221,10 +231,14 @@ html, body {
     .btn-circle, .btn-l {
         width: 40px;
         height: 40px;
-        padding: 8px 10px;
-        font-size: 1em;
+        padding: 6px 8px;
+        font-size: 1.5em;
         line-height: 1.33;
         border-radius: 20px;
+}
+.footer-images {
+  max-height: 70px;
+  padding-top: 10px;
 }
 
 }
@@ -234,7 +248,7 @@ html, body {
 .btn-circle, .btn-xl {
   width: 80px;
   height: 80px;
-  padding: 10px 16px;
+  padding: 11px 16px;
   font-size: 3em;
   line-height: 1.33;
   border-radius: 40px;
@@ -243,7 +257,7 @@ html, body {
 .btn-circle, .btn-l {
   width: 65px;
   height: 65px;
-  padding: 8px 10px;
+  padding: 11px 16px;
   font-size: 2em;
   line-height: 1;
   border-radius: 33px;

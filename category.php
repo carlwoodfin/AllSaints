@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+get_template_part('includes/nav', 'header');
+?>
 
 <div class="row">
 <div class="col-md-9">
@@ -39,4 +41,4 @@ wp_reset_postdata();?>
  </div>
  </div>
 
-<?php get_footer(); ?>
+<?php get_template_part('includes/content', 'footer'); ?>
