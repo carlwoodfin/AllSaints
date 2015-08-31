@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+get_template_part('includes/nav', 'header');
+?>
 
 <div class="row">
 
@@ -14,17 +16,16 @@
 	  	
 		
 
-	<?php endwhile; else: ?>
+			<?php endwhile; else: ?>
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
-	<?php endif; ?>
-	<div class="row">
-	<?php comments_template(); ?>
-	</div>
+			<?php endif; ?>
+		<div class="row">
+			<?php comments_template(); ?>
+		</div>
 	
-	<div class="row">
-	<?php get_sidebar('Header'); ?>  	
- 	</div>
-
+		<div class="col-md-3">
+			<?php get_sidebar('Header'); ?>  	
+ 		</div>
+	</div>
 </div>
- </div>
 <?php get_template_part('includes/content', 'footer'); ?>

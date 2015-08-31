@@ -2,7 +2,6 @@
 get_template_part('includes/nav', 'header');
 ?>
 
-<div class="col-md-12">
 <?php
 
 if ( is_post_type_archive() ) { ?>

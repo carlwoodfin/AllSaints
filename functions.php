@@ -41,7 +41,7 @@ add_theme_support( 'post-thumbnails' );
 // Add featured image sizes
 add_image_size( 'featured-large', 640, 294, true ); // width, height, crop
 add_image_size( 'slider-image', 1000, 200, true );
-add_image_size( 'category-image', 150, 150, true );
+add_image_size( 'category-image', 100, 100, true );
 
 // Add other useful image sizes for use through Add Media modal
 add_image_size( 'medium-width', 480 );
