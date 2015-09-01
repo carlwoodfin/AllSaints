@@ -15,7 +15,7 @@ if ( post_password_required() ) {
     return;
 }
 ?>
-
+<div class="well">
 
     <?php if ( have_comments() ) : ?>
         <h4 class="">
@@ -42,11 +42,10 @@ if ( post_password_required() ) {
         <p class="no-comments"><?php _e( 'Comments are closed.', 'twentyfifteen' ); ?></p>
     <?php endif; ?>
 
+</div>
 
-
+<div class="well">
 <?php comment_form(); ?>
+</div>
 
-
-
-</div><!-- .comments-area -->
 
