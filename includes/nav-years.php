@@ -1,4 +1,5 @@
-<div class="row text-center">
+<div class="row">
+<div class="text-center">
     <a href="<?php echo get_post_type_archive_link( 'year-1' ); ?>">
     <button type="button"  class="btn btn-glyph btn-circle btn-l">1</i></button>
     </a>
@@ -22,6 +23,6 @@
     <a href="<?php echo get_post_type_archive_link( 'year-6' ); ?>">
     <button type="button"  class="btn btn-glyph btn-circle btn-l">6</i></button>
     </a>
-
-<hr>
+    
+</div>
 </div>

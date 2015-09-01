@@ -9,6 +9,7 @@ if ( is_post_type_archive() ) { ?>
     <?php
 }
 
+
 $post_type = get_query_var( 'post_type' );
  
 
@@ -23,32 +24,33 @@ foreach ( $myposts as $post ) : setup_postdata( $post );
 
 
  <div class="row">
+ <div class="col-md-9">
   <div class="well">
   <div class="media">
   <div class="media-left media-middle">
 
-  <div class="col-sm-2">
+  <div class="col-md-3">
     <?php the_post_thumbnail('category-image', array('class' => 'media-object img-circle')); ?>
   </div>
   </div>
   <div class="media-body">
   <div class="media-heading">
-    <div class"col-sm-5">
+    <div class"col-md-6">
         <h4 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
         </div>
         </div>
         <p><?php the_excerpt(); ?></p>
-        </div>
-      
-
-        
-        
+        </div>       
 </div>
 </div>
 </div>
+<div class="col-md-3">
+<?php get_sidebar( $post_type ); ?>
+</div>
+</div>
 
 
-<?php endforeach; 
+<?php endforeach;
 wp_reset_postdata();?>
 
 

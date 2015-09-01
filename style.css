@@ -29,10 +29,7 @@ html, body {
 	
 }
 
-.widget ul {
-    list-style-image: none;
-    list-style: none;
-}
+
 
 .header {
 	background-color: #106EB0;
@@ -68,7 +65,7 @@ html, body {
 .comment-form-author,
 .comment-form-email,
 .comment-form-url {
-    
+    max-width: 50%;
 }
 
 .year-work {
@@ -123,6 +120,10 @@ html, body {
 
 .well{
     background: rgba(233, 245, 252, 0.5);
+}
+
+.panel-sidebar {
+  min-height: 250px;
 }
 
 /* Footer */
@@ -246,7 +247,7 @@ html, body {
         border-radius: 20px;
 }
 .footer-images {
-  max-height: 70px;
+  max-height: 60px;
   padding-top: 10px;
 }
 
